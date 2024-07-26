@@ -1,0 +1,341 @@
+/*Pre-Loader*/
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #081b2a;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em dotted #00c9fd;
+    border-radius: 20%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2.5s ease-in-out infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .3s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    
+}
+/*Pre-Loader-End*/
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #081b2a;   
+}
+
+/*glassmorphism-navbar*/
+.glassmorphism{
+    background: #081b2ac0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;  
+}
+/*glassmorphism-navbar-End*/
+
+/*navbar-brand*/
+.navbarbrand{
+    color: #00c9fd;
+    font-family: "Quantico", sans-serif;
+}
+/*navbar-brand-End*/
+
+/*nav-link*/
+.navlink{
+    font-family: "Quantico", sans-serif;
+}
+/*nav-link*/
+
+/*nav-link-Active*/
+.navbar-nav .active{
+    color: #00c9fd !important;
+}
+/*nav-link-Active-End*/
+
+/*Home-Section top margin*/
+.hometop{
+    margin-top: 50px;
+}
+/*Home-Section top margin end*/
+
+/*Home-Section img*/
+#imgsize{
+    width: 100%;
+    border-radius: 30%;
+    margin-top: 50px; 
+ }
+ /*Home-Section Img End*/
+ 
+/*Home-Section btn*/
+.btn-active:active{
+    color: #00c9fd !important;
+}
+/*Home-Section btn End*/
+
+/*Home-Section Content*/
+.homecontent{
+    font-family: "Quantico", sans-serif;
+    color: #00c9fd;  
+}
+.homecontent-white{
+    font-family: "Quantico", sans-serif;
+    text-shadow: 0 0 0px #87e2f8,0 0 35px #87e2f8,0 0 100px #87e2f8;
+}
+.homename{
+    margin-top: 100px !important;
+}
+/*Home-Section Content End*/
+
+/*Home-Section Icon*/
+.icon-size{
+    font-size: 2rem;
+    color: #ffffffbd;
+    transition: 0.5s;
+}
+.icon-size:hover{
+    color: #00c9fd;
+    text-shadow: 0 0 0px #87e2f8,0 0 15px #87e2f8,0 0 100px #87e2f8;
+}
+.icon-top{
+    margin-top: 50px; 
+}
+/*Home-Section Icon End*/
+
+/*Home-Section Explore btn*/
+.explorebtn{
+    color: white;
+    border: 2px solid #00c9fd !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s ease-out;
+}
+.explorebtn:hover{
+    color: black;
+    background-color: #00c9fd;
+}
+.homebtn i{
+    margin-right: 5px;
+}
+/*Home-Section Explore btn*/
+
+/*About-Title */
+.abouttitle{
+    font-family: "Quantico", sans-serif;
+    color: rgb(0, 201, 253) !important;  
+}
+/*About-Title */
+
+/*About-Content */
+.aboutpara{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;
+}
+/*About-Content */
+
+/*skill-Title */
+.skilltitle{
+        font-family: "Quantico", sans-serif;
+        color: #00c9fd !important;  
+}
+/*skill-Title End*/
+
+/*Skill-Img */
+.skill-img{
+    width: 100px;
+}
+/*Skill-Img End*/
+
+/*Skill section card*/
+.card-size{
+    width: 250px;
+    height: 450px;
+    background-color: #52505096;
+    transition: 0.3s;
+}
+.card-size:hover{
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,201,253,0.36);
+    box-shadow: 0px 0px 15px 1px rgba(0,201,253,0.36); 
+}
+/*skill sectioncard*/
+
+/*skillbtn*/
+.skillbtn{
+    transition: 0.5s ease-in-out !important;
+    border: 2px solid radial-gradient(at right top, #2a66fc67, rgba(176, 46, 252, 0.363)) !important;
+}
+.skillbtn:hover{
+background: #2a66fc63;
+background: radial-gradient(at right top, #2a66fc67, rgba(176, 46, 252, 0.363));
+}
+/*skillbtn end*/
+
+/*skill Section card Content*/
+.skillcontent{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;   
+}
+/*skill Section card Content*/
+
+/*Project Section img*/
+.projectimage{
+    margin-top: 125px !important;
+}
+/*Project Section img*/
+
+/*Project Section Title*/
+.projecttitle{
+    font-family: "Quantico", sans-serif;
+    color: #00c9fd !important;  
+}
+/*Project Section Title end*/
+
+/*Project Section content*/
+.project-para{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem; 
+}
+.project-para::first-letter{
+    padding-left: 32%;
+}
+/*Project Section content*/
+
+/*Contact Section Title*/
+.contacttitle{
+    font-family: "Quantico", sans-serif;
+    color: #00c9fd !important;  
+}
+/*Contact Section Title*/
+
+/*Contact Section img*/
+#contact-img{
+    margin-top: 100px !important;
+    opacity: 0.85;  
+    width: 350px; 
+    height: 350px;
+}
+/*Contact Section img end*/
+
+/*Skill Section Card*/
+.card-bg{
+background: rgba(176, 46, 252, 0.185);
+transition: 0.7s;
+margin-top: 20px !important;
+}
+.card-bg:hover{
+    -moz-box-shadow: 0px 0px 15px 1px rgba(184, 196, 199, 0.36);
+    box-shadow: 0px 0px 15px 1px rgba(224, 227, 228, 0.36);
+}
+/*Skill Section Card*/
+
+/*contact Section Msg*/
+#contact-msg{
+    height: 100px !important;
+}
+/*contact Section Msg end*/
+
+/*contact Section Input*/
+.contact-input{
+    opacity: 0.9;
+    border-radius: 25px !important;
+}
+/*contact Section Input end*/
+
+/*contact Section Icons*/
+.contact-icons{
+    font-size: 30px;  
+}
+.contact-icons i{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5) !important;
+    margin-left: 20px;
+}
+.contact-icons i:hover{
+    color: #00c9fd !important;
+}
+/*contact Section Icons*/
+
+@media only screen and (max-width: 800px) {
+    .glassmorphism{
+        position: sticky;
+    }
+    .hometop{
+        margin-top: 0 !important;
+    }
+    #homeimg{
+        margin-top: 0 !important;
+    }
+    .homename{
+        margin-top: 10px !important;
+    }
+    .aboutmobiletop{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .skillmobiletop{
+        margin-top: 0 !important;
+    }
+    #img-size{
+        margin-top: 0;
+    }
+    #aboutsection{
+        margin-top: none !important;
+    }
+    .abouttitle{
+        margin-top: none !important;
+    }
+    
+    #img-mobile-block {
+   display: none !important;
+    }
+    .card-size{
+        width: 350px;
+        height: 400px;
+    }
+    .projectimage{
+        margin-top: 5px !important;
+    }
+    #contact-img{
+        display: none;
+    }
+
+}
+
+
+
+

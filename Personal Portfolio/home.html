@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!--Bootstrap CSS End-->
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap JS End-->
+
+    <!--Font Awesome CDN Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font Awesome CDN Link-->
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font-End-->
+
+    <!--External-CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--External-CSS-End-->
+
+    <!--Animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Animation-End-->
+
+    <title>PortFolio</title>
+    <link rel="icon" href="Images/title-2 (1).png">
+  </head>
+  <body>
+    <!--Pre-Loader-->
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
+    <!--Pre-Loader-End-->
+
+    <main>
+      <!--Main-->
+
+      <!--Navbar-->
+      <div class="sticky-top glassmorphism">
+        <nav class="navbar navbar-dark navbar-expand-lg container">
+          <a
+            class="navbar-brand fw-semi-bold fs-3 navbarbrand navbarbrandhover mt-1"
+            href="#"
+            >P o r t F o l i o</a
+          >
+          <!--toggle-Btn-->
+          <button
+            title="toggler-button"
+            type="button"
+            class="navbar-toggler aqua"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavbar"
+            aria-controls="myNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--toggle-Btn-End-->
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav nav nav-underline ms-auto mt-1" id="navbar">
+              <!--Home-Section-Nav-->
+              <li class="nav-item me-md-5">
+                <a class="nav-link fs-6 navlink" href="#homesection">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    >Home</span
+                  ></a
+                >
+              </li>
+              <!--Home-Section-Nav-End-->
+
+              <!--About-Section-Nav-->
+              <li class="nav-item me-md-5 active">
+                <a class="nav-link fs-6 navlink" href="#aboutsection"
+                  ><span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    >AboutMe</span
+                  >
+                </a>
+              </li>
+              <!--About-Section-Nav-End-->
+
+              <!--Skill-Section-Nav-->
+              <li class="nav-item me-md-5">
+                <a class="nav-link fs-6 navlink" href="#skillsection"
+                  ><span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    >Skill</span
+                  >
+                </a>
+              </li>
+              <!--Skill-Section-Nav-End-->
+
+              <!--Project-Section-Nav-->
+              <li class="nav-item me-md-5">
+                <a class="nav-link fs-6 navlink" href="#project-section"
+                  ><span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    >Project</span
+                  >
+                </a>
+              </li>
+              <!--project-Section-Nav-End-->
+
+              <!--Contact-Section-Nav-->
+              <li class="nav-item me-md-5">
+                <span></span>
+                <a class="nav-link fs-6 navlink" href="#contactsection"
+                  ><span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    >Contact</span
+                  >
+                </a>
+              </li>
+              <!--Contact-Section-Nav-End-->
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--Navbar-End-->
+
+      <!--Home-Section-->
+      <div id="homesection" class="hometop"></div>
+
+      <section class="container">
+        <div class="row">
+          <!--Home-Section-Img-->
+          <div
+            class="col-md-6 ms-0 mt-5"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            id="homeimg"
+          >
+            <img
+              src="Images/my-img 1.png"
+              class="image-fluid me-md-5"
+              alt=""
+              id="imgsize"
+            />
+          </div>
+          <!--Home-Section-Img-End-->
+
+          <!--Home-Content-->
+          <div
+            class="col homename"
+            data-aos="zoom-out-down"
+            data-aos-duration="1500"
+          >
+            <h1 class="homecontent h1">Hello,</h1>
+            <h1 class="homecontent h1">I'm Dharani Dharan</h1>
+            <h2 class="homecontent-white text-light h2">FrontEnd-Developer</h2>
+            <!--Home-Content-End-->
+
+            <!--Home-section-Btn-->
+            <div class="col mt-3">
+              <a
+                href="PDF/cv.pdf"
+                class="btn btn-download explorebtn text-light mt-5 me-2"
+                download
+                >Download CV <i class="fa-solid fa-circle-down"></i
+              ></a>
+              <a href="#aboutsection" class="btn explorebtn text-light mt-5"
+                >Explore The Portfolio <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <!--Home-section-End-Btn-->
+
+            <!--Home-section-Icons-->
+            <div class="row icon-top my-5">
+              <div class="col">
+                <a title="github" href="https://github.com/dharani2812"
+                  ><i class="fa-brands fa-github icon-size p-3"></i
+                ></a>
+                <a
+                  title="linkedin"
+                  href="https://www.linkedin.com/in/dharani-dharan-134b702a1/"
+                  ><i class="fa-brands fa-linkedin icon-size p-3"></i
+                ></a>
+                <a
+                  title="instagram"
+                  href="https://www.instagram.com/ft_dharani/?hl=en"
+                  ><i class="fa-brands fa-instagram icon-size p-3"></i
+                ></a>
+              </div>
+            </div>
+            <!--Home-section-Icons-End-->
+          </div>
+        </div>
+      </section>
+      <!--Home-End-->
+
+      <!--About-Section-->
+      <section class="container" id="aboutsection">
+        <div class="row my-5 aboutmobiletop">
+          <div class="col-md-6 my-5 aboutmobiletop">
+            <!--About-Section-title-->
+            <h2
+              class="h2 abouttitle fs-1"
+              data-aos="fade-down-right"
+              data-aos-duration="1200"
+            >
+              About Me
+            </h2>
+            <!--About-Section-title-End-->
+
+            <hr />
+            <hr />
+
+            <!--About-Section-para-->
+            <p
+              class="text-light aboutpara"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos="new-animation"
+            >
+              I am currently pursuing a degree in Computer Science Engineering
+              at Velammal Institute of Technology. I completed my SSLC and HSC
+              at Jayam Matric Higher Secondary School, achieving excellent
+              marks. I am a passionate Full Stack Developer. My journey began
+              with mastering HTML and CSS, which I utilized to complete several
+              projects. Throughout my learning process, I not only honed my
+              skills but also created projects that I proudly shared on my
+              GitHub.As a Junior Front-End Developer, I have a robust grasp of
+              HTML and CSS. I tackle each project with enthusiasm and a
+              dedication to lifelong learning. I am convinced that the most
+              effective solutions emerge from teamwork and a thorough
+              understanding of user needs. I am always ready to step outside my
+              comfort zone to embrace new challenges, whether it involves
+              mastering a new framework or experimenting with cutting-edge
+              design patterns.
+            </p>
+            <!--About-Section-para-End-->
+          </div>
+
+          <!--About-Section-Img-->
+          <div class="col-sm-6 mt-5">
+            <img
+              src="Images/about-img.png"
+              class="image-fluid w-100 mt-3"
+              id="img-mobile-block"
+              alt=""
+              data-aos="zoom-out"
+              data-aos-duration="1200"
+            />
+          </div>
+          <!--About-Section-Img-->
+        </div>
+      </section>
+      <!--About-Section-End-->
+
+      <!--Skill-Section-->
+      <section class="container mt-5 skillmobiletop" id="skillsection">
+        <!--Skill-Section-Title-->
+        <h2
+          class="h2 skilltitle fs-1 mt-5 skillmobiletop"
+          data-aos="fade-up-right"
+          data-aos-duration="1200"
+        >
+          Skills
+        </h2>
+        <!--Skill-Section-Title-End-->
+
+        <div class="row mt-5 skillmobiletop">
+          <!--HTML-Card-->
+          <div class="col-md-3" data-aos="fade-right" data-aos-duration="1200">
+            <div class="card card-size my-5 mx-auto">
+              <div class="card-body">
+                <img
+                  src="Images/html.png"
+                  class="image-fluid skill-img mx-auto d-block"
+                  alt=""
+                />
+                <h3 class="h3 text-light text-center">HTML5</h3>
+                <p
+                  class="lead text-light text-center fs-6 skillcontent mt-3 fw-bolder"
+                >
+                  HTML stands for HyperText Markup Language. It is a language
+                  that is used to create web pages and web applications. HTML
+                  uses tags and elements to define the structure and content of
+                  a web page.
+                </p>
+                <a
+                  href="https://github.com/dharani2812/HTML-CSS"
+                  class="btn btn-outline-primary btn-sm d-grid skillbtn mt-4"
+                  >HTML Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--HTML-Card-End-->
+
+          <!--CSS-Card-->
+          <div class="col-md-3">
+            <div
+              class="card card-size my-5 mx-auto"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <img
+                  src="Images/css.png"
+                  class="image-fluid skill-img mx-auto d-block"
+                  alt=""
+                />
+                <h3 class="h3 text-light text-center">CSS3</h3>
+                <p
+                  class="lead text-light text-center skillcontent fs-6 mt-3 fw-bolder"
+                >
+                  CSS stands for Cascading Style Sheets. It is a style sheet
+                  language that is used to describe the appearance and
+                  formatting of a document written in a markup language, such as
+                  HTML.
+                </p>
+                <a
+                  href="https://github.com/dharani2812/HTML-CSS"
+                  class="btn btn-outline-primary d-grid skillbtn btn-sm mt-4"
+                  >CSS Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--CSS-Card-End-->
+
+          <!--JavaScript-Card-->
+          <div class="col-md-3">
+            <div
+              class="card card-size my-5 mx-auto"
+              data-aos="fade-down"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <img
+                  src="Images/javascript.png"
+                  class="image-fluid skill-img mx-auto d-block"
+                  alt=""
+                />
+                <h3 class="h3 text-light text-center">JAVASCRIPT</h3>
+                <p
+                  class="lead text-light text-center fs-6 skillcontent mt-3 fw-bolder"
+                >
+                  JavaScript is a lightweight, single-threaded, and interpreted
+                  compiled programming language. It is well-known for the
+                  development of web pages, and many non-browser environments
+                  also use it.
+                </p>
+                <a
+                  href="https://github.com/dharani2812/JAVASCRIPT"
+                  class="btn btn-outline-primary d-grid skillbtn btn-sm mt-4"
+                  >Javascript Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--JavaScript-Card-End-->
+
+          <!--BootStrap-Card-->
+          <div class="col-md-3">
+            <div
+              class="card card-size my-5 mx-auto"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <img
+                  src="Images/bootstrap.png"
+                  class="image-fluid skill-img mx-auto d-block"
+                  alt=""
+                />
+                <h3 class="h3 text-light text-center">BOOTSTRAP</h3>
+                <p
+                  class="lead text-light text-center fs-6 skillcontent my-3 fw-bolder"
+                >
+                  Bootstrap is the most popular CSS framework for developing
+                  responsive and mobile-first websites . It is a powerful,
+                  components, and feature-packed frontend toolkit .
+                </p>
+                <a
+                  href="https://github.com/dharani2812/JAVASCRIPT"
+                  class="btn btn-outline-primary d-grid skillbtn btn-sm mt-5"
+                  >Bootstrap Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--BootStrap-Card-End-->
+        </div>
+      </section>
+      <!--Skill-Section-End-->
+
+      <!--Project-Section-->
+      <section class="container" id="project-section">
+        <div class="row my-5">
+          <!--Project-Section-Img-->
+          <div class="col-md-6">
+            <img
+              src="Images/project-img.png"
+              class="w-100 mt-5 projectimage"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              alt=""
+            />
+          </div>
+          <!--Project-Section-Img-End-->
+
+          <div class="col-md-6">
+            <!--Project-Title-->
+            <h2
+              class="h2 fs-1 projecttitle my-5"
+              data-aos="fade"
+              data-aos-duration="1200"
+            >
+              Projects
+            </h2>
+            <!--Project-Title-->
+
+            <!--Project-Section-Content-->
+            <div data-aos="fade-left" data-aos-duration="1200">
+              <p class="p text-light project-para">
+                As a fresher front-end developer, I have gained practical
+                experience by working on several major projects utilizing HTML,
+                CSS, JavaScript, and Bootstrap. Through these projects, I have
+                developed a solid foundation in front-end technologies and honed
+                my skills in creating responsive and visually appealing web
+                applications. One of my significant achievements includes the
+                development of a personal portfolio, which showcases my
+                abilities and projects. This portfolio not only highlights my
+                technical proficiency but also serves as a testament to my
+                commitment to continuous learning and improvement in the field
+                of web development. Additionally, these major projects are
+                available on my GitHub account, providing a comprehensive view
+                of my work and coding capabilities.
+              </p>
+
+              <!--Project-Section-Icon-->
+              <span
+                ><a
+                  href="https://github.com/dharani2812?tab=repositories"
+                  class="btn btn-outline-primary d-block project-btn"
+                  >Visit My GitHub Account
+                  <i class="fa-brands fa-github"></i></a
+              ></span>
+              <!--Project-Section-Icon-End-->
+            </div>
+            <!--Project-Section-Content-End-->
+          </div>
+        </div>
+      </section>
+      <!--Project-Secton-End-->
+
+      <section class="container" id="contactsection">
+        <!--Contact-Section-->
+        <div class="row">
+          <!--Contact-Card-->
+          <div class="col-md-6">
+            <h2 class="h2 text-center contacttitle">Get In Touch</h2>
+            <div
+              class="card card-bg"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <div class="card-body">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="79e6a16f-413a-4e37-877d-7bff53936586"
+                  />
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      title="text-name"
+                      class="form-control contact-input"
+                      id="contact-name"
+                      placeholder="Enter Your Name"
+                      name="name"
+                    />
+                    <label for="#contact-name" class="contact-label"
+                      >Name</label
+                    >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      title="text-subject"
+                      class="form-control contact-input"
+                      id="contact-subject"
+                      placeholder="subject"
+                      name="subject"
+                    />
+                    <label for="#contact-subject">Subject</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      title="Email"
+                      class="form-control contact-input"
+                      id="contact-email"
+                      placeholder="name@example.com"
+                      name="email"
+                    />
+                    <label for="#contact-email">E-mail</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea
+                      type="textarea"
+                      title="text-msg"
+                      class="form-control contact-input"
+                      id="contact-msg"
+                      placeholder="Message"
+                      name="message"
+                    ></textarea>
+                    <label for="#contact-msg">Message</label>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-outline-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--Contact-Card-End-->
+
+          <!--Contact-Img-->
+          <div
+            class="col-md-6 d-flex justify-content-center"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <img
+              src="Images/contact-img.png"
+              class="image-fluid"
+              alt=""
+              id="contact-img"
+            />
+          </div>
+          <!--Contact-Img-End-->
+        </div>
+        <!--Contact-Section-End-->
+
+        <!--Contact-Section-Icons-->
+        <div class="row mb-3 mt-5">
+          <div class="col text-center contact-icons">
+            <a
+              title="Linked-in"
+              href="https://www.linkedin.com/in/dharani-dharan-134b702a1/"
+              class="btn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a title="github" href="https://github.com/dharani2812" class="btn"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              title="instagrm"
+              href="https://www.instagram.com/ft_dharani/?hl=en"
+              class="btn"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <!--Contact-Section-Icons-End-->
+      </section>
+      <!--Contact-Section-End-->
+
+      <!--Main-End-->
+    </main>
+
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--AOS Library-End-->
+
+    <!--AOS Library Turn OFF in Mobile-->
+    <script>
+      AOS.init();
+      AOS.init({ disable: "mobile" });
+    </script>
+    <!--AOS Library Turn OFF in Mobile-end-->
+
+    <!--Pre-Loader-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 1500);
+    </script>
+    <!--Pre-Loader-End-->
+
+    <!--External JS-->
+    <script src="script.js"></script>
+    <!--External JS-End-->
+  </body>
+</html>
